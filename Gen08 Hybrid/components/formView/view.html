@@ -1,0 +1,25 @@
+<div data-role="view" data-title="Form" data-layout="main" data-model="app.formView" data-show="app.formView.onShow">
+    <div id="formViewModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Search
+                        <input data-bind="value: formViewModel.fields.search" placeholder="Search" type="search">
+                    </label>
+                </li>
+                <li>
+                    <label>Time
+                        <input data-bind="value: formViewModel.fields.time" type="time">
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: formViewModel.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: formViewModel.submit }">Confirm</a>
+            </div>
+        </form>
+    </div>
+    <!-- START_CUSTOM_CODE_formView -->
+    <!-- END_CUSTOM_CODE_formView -->
+</div>

@@ -1,0 +1,26 @@
+<div data-role="view" data-title="About with Icon" data-layout="main" data-model="app.aboutView1" data-show="app.aboutView1.onShow">
+    <div class="about-view" data-bind="invisible:error">
+        <div class="icon-group">
+
+            <div class="app-icon">
+                <img src="resources/284108.jpg">
+            </div>
+
+
+            <div class="app-details">
+                <h2>My App</h2>
+                <h4>Version 1</h4>
+            </div>
+        </div>
+
+        <p>App description</p>
+
+        <div class="button-group button-group-vertical">
+            <a data-role="button" data-rel="external" href="mailto:support@example.com">Contact us</a>
+            <a data-role="button" data-rel="external" href="#" onclick="app.aboutView1.aboutView1Model.openLink('https://www.facebook.com/Telerik');">Like us on Facebook</a>
+            <a data-role="button" data-rel="external" href="#" onclick="app.aboutView1.aboutView1Model.openLink('https://twitter.com/telerik');">Follow us on Twitter</a>
+        </div>
+    </div>
+    <!-- START_CUSTOM_CODE_aboutView1 -->
+    <!-- END_CUSTOM_CODE_aboutView1 -->
+</div>

@@ -1,11 +1,11 @@
 {
   "ProjectName": "Gen08 Hybrid",
-  "ProjectGuid": "81ca8557-47d8-4f30-8277-4b19570c481c",
+  "ProjectGuid": "d53b66a9-bb23-4d86-bd9c-b8fa69b8bc04",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.Gen08Hybrid",
-  "DisplayName": "Gen08 Hybrid",
+  "AppIdentifier": "com.telerik.Generators08Hybrid",
+  "DisplayName": "Generators08 Hybrid",
   "Author": "",
-  "Description": "Gen08 Hybrid",
+  "Description": "Generators08 Hybrid",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -32,10 +32,10 @@
     "ID_CAP_WEBBROWSERCOMPONENT"
   ],
   "WP8Requirements": [],
-  "WP8PublisherID": "{887e7b12-2a52-49f3-9fa7-0afc6ec0b8c7}",
-  "WP8ProductID": "{dc633cc9-3f71-4a05-88f6-8c4b568124f9}",
+  "WP8PublisherID": "{307e2b42-8433-405e-9aeb-c767a4b960cf}",
+  "WP8ProductID": "{afe07bc7-878c-4178-8f18-7ae85d91db1b}",
   "WPSdk": "8.0",
-  "WP8PackageIdentityName": "1234Telerik.Gen08Hybrid",
+  "WP8PackageIdentityName": "1234Telerik.Generators08Hybrid",
   "WP8WindowsPublisherName": "CN=Telerik",
   "WP8SupportedResolutions": [
     "ID_RESOLUTION_WVGA",

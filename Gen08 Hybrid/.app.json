@@ -1,15 +1,155 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true,
+  "views": [
+    {
+      "type": "view",
+      "components": [],
+      "name": "home",
+      "title": "Home",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "search",
+              "title": "Search",
+              "inputType": "search",
+              "placeholder": "Search"
+            },
+            {
+              "type": "field",
+              "name": "time",
+              "title": "Time",
+              "inputType": "time"
+            }
+          ],
+          "name": "formViewModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "formView",
+      "title": "Form",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "generators08Backend",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
+      "name": "authenticationView",
+      "title": "Authentication",
+      "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "dataListViewModel",
+          "dataProvider": "generators08Backend",
+          "collection": "Activities",
+          "headerField": "Text",
+          "masterDetails": true,
+          "detailImageField": "Picture",
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "name": "dataListView",
+      "title": "Data List",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "about",
+          "name": "aboutViewModel",
+          "appName": "My App",
+          "appVersion": "Version 1",
+          "appDescription": "App description",
+          "contactButton": true,
+          "contactLabel": "Contact us",
+          "contactMail": "support@example.com",
+          "facebookButton": true,
+          "facebookLabel": "Like us on Facebook",
+          "facebookLink": "https://www.facebook.com/Telerik",
+          "twitterButton": true,
+          "twitterLabel": "Follow us on Twitter",
+          "twitterLink": "https://twitter.com/telerik"
+        }
+      ],
+      "name": "aboutView",
+      "title": "About no Icon",
+      "addToNavigation": true,
+      "icon": "info"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "about",
+          "name": "aboutView1Model",
+          "appName": "My App",
+          "appVersion": "Version 1",
+          "appIcon": "284108.jpg",
+          "appDescription": "App description",
+          "contactButton": true,
+          "contactLabel": "Contact us",
+          "contactMail": "support@example.com",
+          "facebookButton": true,
+          "facebookLabel": "Like us on Facebook",
+          "facebookLink": "https://www.facebook.com/Telerik",
+          "twitterButton": true,
+          "twitterLabel": "Follow us on Twitter",
+          "twitterLink": "https://twitter.com/telerik"
+        }
+      ],
+      "name": "aboutView1",
+      "title": "About with Icon",
+      "addToNavigation": true,
+      "icon": "info"
+    }
+  ],
   "dataProviders": [
     {
-      "type": "kendo-ui-mobile:dataProvider",
-      "title": "DefaultProvider",
-      "name": "defaultProvider",
+      "type": "dataProvider",
+      "everliveUrl": "//testtap.telerik.com/bs-api/v1/",
+      "name": "generators08Backend",
+      "title": "Generators08 / Generators08 Backend",
       "source": "everlive",
-      "offlineStorage": true,
-      "everliveKey": "8k13Xm59bTkSPsXl",
-      "everliveUrl": ""
+      "everliveKey": "TsDeMsQ21F495PSL",
+      "offlineStorage": true
     }
-  ]
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "view": "home",
+  "transition": "slide",
+  "skin": "flat"
 }
